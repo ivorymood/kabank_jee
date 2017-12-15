@@ -15,10 +15,24 @@
 		width : 100%; height: 30px; border: 1px solid gray;
 	}
 	table tr td{
-		width : 100%; height: 30px; border: 3px solid gray;
+		width : 100%; height: 30px; border: 2px solid gray;
 	}
 	</style>
 </head>
+
+		<!--이 공간은 html의 영역!!! 버튼 넣으면 먹는다   -->
+<body>
+	<table>
+		<tr style = "height: 10%">
+			<td colspan="5">네비게이션</td>
+		</tr>
+		<tr style = "height: 10%">
+			<td style="width:20%">버거킹</td>
+			<td style="width:20%">카카오뱅크</td>
+			<td style="width:20%">비트캠프</td>
+			<td style="width:20%">SK 텔레콤</td>
+			<td style="width:20%">로또</td>
+		</tr>
 <%
 	String menu = request.getParameter("menu");
 	String count = request.getParameter("count");
@@ -30,17 +44,21 @@
 	String price = "";
 	if(count.equals("")){
 %>
-
-		<!--이 공간은 html의 영역!!! 버튼 넣으면 먹는다   -->
-<body>
-<div style = "width : 300px; height: 200px; border: 3px solid pink; margin: 0 auto;">
-	<p>
-		값을 입력하세요
-	</p>
-	<form action="index.jsp">
-		<input type="submit" value = "뒤로가기" />
-	</form>
-</div>
+		<tr style = "height: 80%">
+			<td colspan="5">
+			
+			
+			
+				<div style = "width : 300px; height: 200px; margin: 0 auto;">
+					<p>
+						값을 입력하세요
+					</p>
+					<form action="index.jsp">
+						<input type="submit" value = "뒤로가기" />
+					</form>
+				</div>
+			</td>
+		</tr>
 
 <% 
 	}else{
@@ -63,17 +81,22 @@
 			break;
 	}
 %>
+		<tr style = "height: 80%">
+			<td colspan="5">
+				<div style = "width : 300px; height: 200px; margin: 0 auto;">
+					<p>
+						<%=menu %><%=count %> <%=price%> <br />
+						---------------------- <br />
+						결제금액    <%=total %>
+					</p>
+					<form action="">
+						<input type="submit" value = "결  제"/>
+					</form>
+				</div>
+			</td>
+		</tr>
+	</table>
 
-<div style = "width : 300px; height: 200px; border: 3px solid pink; margin: 0 auto;">
-	<p>
-		<%=menu %><%=count %> <%=price%> <br />
-		---------------------- <br />
-		결제금액    <%=total %>
-	</p>
-	<form action="">
-		<input type="submit" value = "결  제"/>
-	</form>
-</div>
 </body>
 <% }
 	
