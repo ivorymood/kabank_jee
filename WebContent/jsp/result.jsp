@@ -27,11 +27,11 @@
 			<td colspan="5">네비게이션</td>
 		</tr>
 		<tr style = "height: 10%">
-			<td style="width:20%">버거킹</td>
-			<td style="width:20%">카카오뱅크</td>
-			<td style="width:20%">비트캠프</td>
-			<td style="width:20%">SK 텔레콤</td>
-			<td style="width:20%">로또</td>
+			<td style="width:20%; text-align: center;">버거킹</td>
+			<td style="width:20%; text-align: center;">카카오뱅크</td>
+			<td style="width:20%; text-align: center;">비트캠프</td>
+			<td style="width:20%; text-align: center;">SK 텔레콤</td>
+			<td style="width:20%; text-align: center;">로또</td>
 		</tr>
 <%
 	String menu = request.getParameter("menu");
