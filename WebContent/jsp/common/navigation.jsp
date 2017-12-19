@@ -2,15 +2,9 @@
 <body>
 	<table id="wrapper">
 	<tr style = "height: 10%">
-		<td colspan="4">
-			<a href="../index.jsp">
-				HOME
-			</a>
-		</td>
-		<td>
-			<a href="../index.jsp">
-				로그아웃
-			</a>
+		<td colspan="5">
+			<a href="../index.jsp" style="margin-left: 50px">HOME</a>
+			<a href="../index.jsp" style="float: right; margin-right: 50px">로그아웃</a>
 		</td>
 	</tr>
 	<tr style = "height: 10%">
