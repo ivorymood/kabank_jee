@@ -1,0 +1,15 @@
+@charset "UTF-8";
+#join_second_header{height: 80px; text-align: center;}
+#join_prg{height: 500px; font: 8px; color:Tomato; }
+#join_aside{float: left; font: 10px;}
+#input[type=file] {
+    background-color: white;
+    background-image: "../img/paw.png";
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding-left: 40px;
+}
+#input[type=text] {
+    background-color: gray;
+    color: white;
+}
