@@ -6,9 +6,9 @@ header, section, footer, aside, nav, article, figure, figcaption, hgroup{display
 table, tr, td, th{border-collapse: collapse;}
 body{text-align: center;}
 a{text-decoreation: none; color: #0000a0;}
-#wrapper{width: 80%; margin: 15px auto; text-align: center; min-height: calc(100vh - 20px);}
+#wrapper{width: 100%; margin: 15px auto; text-align: center; min-height: calc(100vh - 20px);}
 #header{height: 50px; width: 100%;}
-#nav{background: #000080; padding: 5px 10px; width: 80%; margin-bottom: 20px;}
+#nav{background: #000080; padding: 5px 10px; width: 100%; margin-bottom: 20px;}
 #nav ul{height: 10%}
 #nav li{display: inline-block; list-style: none; padding: 2px;
 			width:15%; text-align: center;}
