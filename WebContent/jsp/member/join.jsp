@@ -9,11 +9,9 @@
 	<link rel="stylesheet" href="../../css/member.css" />
 </head>
 <body>
-<div id="wrapper">
-	<header id="join_header">
-		<a href="../index.jsp" style="margin-left: 50px">HOME</a>
-	</header>
+<%@ include file="../common/header.jsp" %>
 <%@ include file="../common/nav.jsp" %>
+<div id="wrapper">
 	<section>
 		<article>
 			<header id="join_second_header">
@@ -23,18 +21,18 @@
 				</hgroup>
 			</header>
 		</article>
+		<aside id="join_aside">
+			아이디<br/>
+			이름<br/>
+			주민번호<br/>
+			이메일<br/>
+			연락처<br/>
+			비밀번호<br/>
+			비밀번호 확인<br/>
+			주소<br/><br/>
+			사진등록<br/>
+		</aside>
 		<form action="result.jsp">
-			<aside id="join_aside">
-				아이디<br/>
-				이름<br/>
-				주민번호<br/>
-				이메일<br/>
-				연락처<br/>
-				비밀번호<br/>
-				비밀번호 확인<br/>
-				주소<br/><br/>
-				사진등록<br/>
-			</aside>
 			<article id="join_prg">
 				<input type="text" name="id"/> <input type="submit" name="id_check" value="아이디 중복 확인"/>
 				* 영문소문자로 시작하는 6~12자 영문소문자 또는 숫자 (공백, 특수문자 불가)<br/>
@@ -63,10 +61,8 @@
 			</article>
 		</form>
 	</section>
-	<aside>
-	
-	</aside>
-<%@ include file="../common/footer.jsp" %>
 </div>
+<%@ include file="../common/footer.jsp" %>
 </body>
+<script src="../../js/member.js"></script>
 </html>

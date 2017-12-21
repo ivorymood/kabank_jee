@@ -5,7 +5,7 @@
 <body>
 <%@ include file="../common/header.jsp" %>
 <%@ include file="../common/nav.jsp" %>
-	<section style = "width : 300px; height: 200px; margin: 0 auto;">	
+	<section id="wrapper">	
 		<article>
 		카카오 result
 		</article>

@@ -4,7 +4,7 @@
 <%@ include file="../common/head.jsp" %>
 <body>
 <%@ include file="../common/header.jsp" %>
-	<section style = "width : 300px; height: 200px; margin: 0 auto;">	
+	<section id="wrapper">	
 		<article>
 			sk result
 		</article>

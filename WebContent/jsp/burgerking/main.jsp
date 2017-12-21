@@ -5,23 +5,23 @@
 <body>
 <%@ include file="../common/header.jsp" %>
 <%@ include file="../common/nav.jsp" %>
-	<section>
+	<section id="wrapper">
 		<article>
-			<header>
+			<header id="second_header">
 				<hgroup>
 					<h1><mark>버거킹</mark> 주문 화면</h1>
 					<h2>상품과 수량을 선택해주세요</h2>
 				</hgroup>
 			</header>
 		</article>	
-		<form action="result.jsp" style = "width : 450px; margin: 0 auto;">	
+		<form id="order_form" action="result.jsp" style = "width : 450px; margin: 0 auto;">	
 	<!-- 넘겨줄 값 없을때는 division, 있을때는 form action으로 묶자 -->
 			<article>
 			<table>
 				<tr>
 					<td>
 						<figure>
-							<img src="https://www.bk.com/sites/default/files/02200-1-BK_Web_WHOPPER_300x270px_CR.jpg" alt="햄버거"
+							<img src="../../img/burger.png" alt="햄버거"
 								style="width: 150px; height: 150px" /><br/>
 							<figcaption>
 								<input type="checkbox" name="hamburger-menu" value="hamburger"/>￦5,500
@@ -31,7 +31,7 @@
 					</td>
 					<td>
 						<figure>
-						<img src="https://www.bk.com/sites/default/files/Thumb_Croissanwich_Ham_Egg_Cheese.jpg" alt="베이글"
+						<img src="../../img/bagel.jpg" alt="베이글"
 							style="width: 150px; height: 150px" /><br/>
 						<figcaption>
 						<input type="checkbox" name="bagel-menu" value="bagel"/>
@@ -42,7 +42,7 @@
 					</td>
 					<td>
 						<figure>
-						<img src="https://www.bk.com/sites/default/files/Thumb_0005_Sides.jpg" alt="감자칩"
+						<img src="../../img/chip.jpg" alt="감자칩"
 							style="width: 150px; height: 150px" /><br/>
 						<figcaption>
 						<input type="checkbox" name="chip-menu" value="chip"/>
@@ -55,7 +55,7 @@
 				<tr>
 					<td>
 					<figure>
-						<img src="https://www.bk.com/sites/default/files/02001-2_BK_Web_ChickenGardenSalad_300x270px_0.jpg" alt="샐러드"
+						<img src="../../img/salad.jpg" alt="샐러드"
 							style="width: 150px; height: 150px" /><br/>
 					<figcaption>
 						<input type="checkbox" name="salad-menu" value="salad"/>
@@ -66,7 +66,7 @@
 					</td>
 					<td>
 						<figure>
-						<img src="https://www.bk.com/sites/default/files/Menu_0003_Beverages_0.jpg" alt="콜라" 
+						<img src="../../img/coke.jpg" alt="콜라" 
 							style="width: 150px; height: 150px" /><br/>
 						<figcaption>
 						<input type="checkbox" name="coke-menu" value="cola"/>
@@ -77,7 +77,7 @@
 					</td>
 					<td>
 						<figure>
-						<img src="https://www.bk.com/sites/default/files/BK_Web_BKJOEHOTCOFFEE_300x270px%255b9%255d.jpg" alt="커피" 
+						<img src="../../img/coffee.jpg" alt="커피" 
 							style="width: 150px; height: 150px" /><br/>
 						<figcaption>
 						<input type="checkbox" name="coffee-menu" value="coffee"/>
@@ -102,16 +102,14 @@
 						<input type="hidden" name = "coffee" value="900" />
 						<input type="hidden" name = "bagel" value="4000" />
 						<input type="hidden" name = "salad" value="3500" />
-						<input type="submit" value="전  송" style="width: 100px; margin-left: 180px"/>
+						<input id="order_btn" type="button" value="전  송" style="width: 100px; margin-left: 180px"/>
 					</td>
 				</tr>
 			</table>
 			</article>
 		</form>
 	</section>
-	<aside>
-	
-	</aside>
 <%@ include file="../common/footer.jsp" %>
 </body>
+<script src="../../js/burgerking.js"></script>
 </html>

@@ -5,7 +5,7 @@
 <body>
 <%@ include file="../common/header.jsp" %>
 <%@ include file="../common/nav.jsp" %>
-	<section>
+	<section id="wrapper">
 		<article>
 <%@ page import="java.util.*" %>
 <%@ page import="java.text.*" %>
@@ -65,9 +65,7 @@
 			</div>		
 		</article>
 	</section>
-	<aside>
-	
-	</aside>
 <%@ include file="../common/footer.jsp" %>
 </body>
+<script src="../../js/lotto_result.js"></script>
 </html>

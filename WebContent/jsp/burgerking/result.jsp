@@ -1,14 +1,14 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page import="java.util.*" %>
+<%@ page import="com.kabank.jee.domain.BurgerKingBean" %>
 <!doctype html>
 <html lang="en">
 <%@ include file="../common/head.jsp" %>
 <body>
-	<section>
-	<article>
 <%@ include file="../common/header.jsp" %>
 <%@ include file="../common/nav.jsp" %>
-<%@ page import="java.util.*" %>
-<%@ page import="com.kabank.jee.domain.BurgerKingBean" %>
+	<section id="wrapper">
+	<article>
 
 <jsp:useBean id="hamburger" class="com.kabank.jee.domain.BurgerKingBean" scope="request"></jsp:useBean>
 <jsp:useBean id="coke" class="com.kabank.jee.domain.BurgerKingBean" scope="request"></jsp:useBean>
@@ -86,7 +86,6 @@
 							res += Integer.parseInt(s.getCount())*Integer.parseInt(s.getPrice());
 						}
 					}	
-			
 %>	
 			<br/>-------------------------------------------<br/>
 			총 결제금액 : <%= res %>
@@ -97,4 +96,5 @@
 	</section>
 <%@ include file="../common/footer.jsp" %>
 </body>
+<script src="../../js/burgerking_result.js"></script>
 </html>

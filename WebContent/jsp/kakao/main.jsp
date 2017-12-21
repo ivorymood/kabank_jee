@@ -5,14 +5,12 @@
 <body>
 <%@ include file="../common/header.jsp" %>
 <%@ include file="../common/nav.jsp" %>
-	<section style = "width : 300px; height: 200px; margin: 0 auto;">	
+	<section id= "wrapper" >	
 		<article>
 			카카오 메인		
 		</article>	
 	</section>		
-	<aside>
-	
-	</aside>
 <%@ include file="../common/footer.jsp" %>
 </body>
+<script src="../../js/kakao.js"></script>
 </html>

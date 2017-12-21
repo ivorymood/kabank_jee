@@ -5,7 +5,7 @@
 <body>
 <%@ include file="../common/header.jsp" %>
 <%@ include file="../common/nav.jsp" %>
-	<section style = "width : 300px; height: 200px; margin: 0 auto;">	
+	<section id= "wrapper">	
 		<article>
 			<h1>sk 메인</h1>
 		</article>
@@ -15,4 +15,5 @@
 	</aside>		
 <%@ include file="../common/footer.jsp" %>
 </body>
+<script src="../../js/sktelecom.js"></script>
 </html>

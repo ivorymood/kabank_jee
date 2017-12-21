@@ -6,13 +6,13 @@
 	<title>main</title>
 	<link rel="stylesheet" href="../css/common.css" />
 	<link rel="stylesheet" href="../css/index.css" />
+	<script src="../js/index.js"></script>
 </head>
 <body>
 <div id="wrapper">
 	<header id="index_header">
-		<a href="../index.jsp" style="margin-left: 50px">HOME</a>
+		<h1><a id="home_text">BIT CAMP SAMPLE PROJECT</a></h1>
 	</header>
-<%@ include file="common/nav.jsp" %>
 	<section id="index_section">
 		<article>
 			<table id="index_table">
@@ -21,27 +21,29 @@
 						<form action="burgerking/main.jsp">
 							<table id="index_login_box" >
 			 					<tr>
-			 						<td id="index_input_id"> 
-			 						<input type="text" name="id" placeholder="id"/>
+			 						<td > 
+			 						<input id="index_input_id" type="text" name="id" placeholder="id"/>
 			 						</td>
-			 						<td id="index_input_pass" rowspan="2">
-				 						<input type="submit" value="로그인" id="index_input_pw"/>
+			 						<td  rowspan="2">
+				 						<input id="index_input_btn" type="submit" value="로그인" id="index_input_pw"/>
 									</td>
 			 					</tr>
 			 					<tr>
-			 						<td id="index_input_btn">
-			 						<input type="text" name="pw" placeholder="pw"/>
+			 						<td >
+			 						<input id="index_input_pw" type="text" name="pw" placeholder="pw"/>
 			 						</td>
 			 					</tr>
 			 				</table>
 						</form>
-						<a href="member/join.jsp">회원가입</a>
+						<a id="go_admin" href="#">관리자</a>
+						<a id="go_join" href="#">회원가입</a>
+						<!--값을 넘겨줄 것이 없는건 a태그+js외부파일  -->
 					</td>
 				</tr>
 			</table>	
 		</article>
 	</section>
-<%@ include file="common/footer.jsp" %>
 </div>
+<%@ include file="common/footer.jsp" %>
 </body>
 </html>
