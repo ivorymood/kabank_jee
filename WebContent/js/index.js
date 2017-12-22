@@ -1,29 +1,32 @@
-/**
- * 
- */
-window.onload = execute;
-function execute(){
-	document.querySelector('#go_admin').onclick=showAlert;
-	document.querySelector('#go_join').onclick=goJoinPage;
-	document.querySelector('#home_text').onclick=goHome;
+function init(){
+	var goAdminLink = document.querySelector('#go_admin_link');
+	var goJoinLink = document.querySelector('#go_join_link');
+	var indexLoginBtn = document.querySelector('#index_login_btn');
+	goAdminLink.addEventListener("click", goAdmin, false);
+	goJoinLink.addEventListener("click", goJoin, false);
+	indexLoginBtn.addEventListener("click", indexLogin, false);
 }
-function showAlert(){
-	var admin = confirm('관리자?');
-	if(admin){
-		alert('안녕하세요 관리자님');
-		location.href="burgerking/main.jsp";
-	}else{
-		alert('관리자만 접근가능 합니다');
+// === 는 자바에서 .equals()와 같다. //'' "" 둘중 어떤걸 써도 ㅇㅋ
+function indexLogin(e){
+	var loginId = document.querySelector('#index_input_id').value;
+	var loginPass = document.querySelector('#index_input_pw').value;
+	var joinId = sessionStorage.getItem('id');
+	var joinPass = sessionStorage.getItem('pass');
+	if(!(loginId === joinId) || !(loginPass === joinPass)){
+		alert('아이디' + loginId + '또는 비밀번호'+loginPass+ '는 틀립니다');
+		e.preventDefault();
 	}
 }
-function goJoinPage(){
-	var member = confirm('회원이 아니신가요?');
-	if(member){
-		location.href = "member/join.jsp";
-	}else{
-		location.href ="#";
-	}
+function goAdmin(){
+	 var admin = confirm('관리자?');
+     if(admin){
+           alert('안녕하세요 관리자님');
+           location.href="burgerking/main.jsp";
+     }else{
+           alert('관리자만 접근가능 합니다');
+     }
 }
-function goHome(){
-	location.href="#";
+function goJoin(){
+	location.href = "member/join.jsp";
 }
+window.addEventListener("load", init, false);

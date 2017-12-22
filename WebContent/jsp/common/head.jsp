@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href="../../css/kakao.css" />
 	<link rel="stylesheet" href="../../css/lotto.css" />
 	<link rel="stylesheet" href="../../css/sktelecom.css" />
-	<link rel="stylesheet" href="../../css/member.css" />
+	<link rel="stylesheet" href="../../css/join.css" />
 </head>
 
 

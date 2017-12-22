@@ -4,6 +4,7 @@
 <head>
 	<meta charset="UTF-8" />
 	<title>main</title>
+	<link rel="shortcut icon" href="../img/favicon.ico" />
 	<link rel="stylesheet" href="../css/common.css" />
 	<link rel="stylesheet" href="../css/index.css" />
 	<script src="../js/index.js"></script>
@@ -25,7 +26,7 @@
 			 						<input id="index_input_id" type="text" name="id" placeholder="id"/>
 			 						</td>
 			 						<td  rowspan="2">
-				 						<input id="index_input_btn" type="submit" value="로그인" id="index_input_pw"/>
+				 						<button id="index_login_btn">로그인</button>
 									</td>
 			 					</tr>
 			 					<tr>
@@ -35,8 +36,8 @@
 			 					</tr>
 			 				</table>
 						</form>
-						<a id="go_admin" href="#">관리자</a>
-						<a id="go_join" href="#">회원가입</a>
+						<a id="go_admin_link" href="#">관리자</a>
+						<a id="go_join_link" href="#">회원가입</a>
 						<!--값을 넘겨줄 것이 없는건 a태그+js외부파일  -->
 					</td>
 				</tr>
