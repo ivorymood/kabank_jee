@@ -14,10 +14,10 @@
 /*연결*/			Connection conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe",
 					"bitcamp", "bitcamp");
 /*명령어 전송*/		Statement stmt = conn.createStatement();
-/*명령어 전송*/		String sql = "SELECT COUNT(*) AS count FROM tab";
+/*명령어 전송*/		String sql = "SELECT * FROM tab";
 /*실행(명령어전송)*/	ResultSet rs = stmt.executeQuery(sql);
 				while(rs.next()){
-					count = rs.getString("count");
+					count = rs.getString("tname");
 				}
 				//System.out.println("테이블 수는 ㅇㅇ: " + count);
 				//sysout에서 찍는건 콘솔영역. 이때는 count선언을 try catch안에 해줘도 ㅇㅋ
@@ -26,6 +26,6 @@
 		}
 	%>
 	테이블 개수는 <%= count %> 입니다
-			// < % =>이건 jsp영역이라서 count선언을 try catch바깥에서 해줘야됨
+			<!--  < % =>이건 jsp영역이라서 count선언을 try catch바깥에서 해줘야됨 -->
 </body>
 </html>

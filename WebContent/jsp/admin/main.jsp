@@ -7,29 +7,33 @@
 	<link rel="stylesheet" href="../../css/common.css" />
 	<link rel="stylesheet" href="../../css/admin.css" />
 </head>
-<body id="wrapper">
-
-	<h1>관리자 메인 페이지</h1>
+<body>
+	<section id="wrapper">
+		<article id="admin_header">
+			<h1>관리자 메인 페이지</h1>
+		</article>
 	<aside id="admin_aside">
-		<a href="">회원관리</a>
+		<a id="member_mgmt_link">회원관리</a>
 	</aside>
-	<section>
-		<article>
-		<table id="admin_table" >
-			<tr>
-				<td>
-					<button id="first_button">테이블 생성</button>
-				</td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr>
-				<td></td>
-				<td></td>
-				<td></td>
-			</tr>
-		</table> 
+		<article id="admin_body">
+			<table id="admin_table" >
+				<tr>
+					<td>
+						<button id="create_table_btn">테이블 생성</button>
+					</td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+			</table> 
 		</article>
 	</section>
+<%@ include file="../common/footer.jsp" %>
 </body>
+	<script src="../../js/admin.js"></script>
+
 </html>
