@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
-#admin_aside{float: left; width: 200px; height: 100%;
-				font: bold 18px verdana, sans-serif; background-color: lightblue;}
+#admin_aside{float: left; width: 200px; height: 500px;
+				font: bold 18px verdana, sans-serif; background-color: AntiqueWhite;}
 #admin_table{border-collapse: collapse; padding: 5px; margin: 0 auto; text-align: center;}
 #admin_table tr td{width: 200px; height: 150px;}				
 #admin_table, tr, td{border: 2px solid darkgray;}

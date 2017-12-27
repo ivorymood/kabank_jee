@@ -3,11 +3,12 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8" />
-	<title></title>
+	<title>admin</title>
 	<link rel="stylesheet" href="../../css/common.css" />
 	<link rel="stylesheet" href="../../css/admin.css" />
 </head>
-<body>
+<body id="wrapper">
+
 	<h1>관리자 메인 페이지</h1>
 	<aside id="admin_aside">
 		<a href="">회원관리</a>
