@@ -18,4 +18,4 @@ function init(){
 			function(e){location.href = "http://bitcamp.co.kr/index.php?main_page=home";
 		},false);
 }
-window.addEventListner("load", init, false);
+window.addEventListener("load", init, false);

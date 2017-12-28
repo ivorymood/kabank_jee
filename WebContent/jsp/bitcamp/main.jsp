@@ -17,5 +17,5 @@
 	</aside>	
 <%@ include file="../common/footer.jsp" %>
 </body>
-<script src="../../js/bitcamp.js"></script>
+<script src="../../js/bitcamp/bitcamp.js"></script>
 </html>

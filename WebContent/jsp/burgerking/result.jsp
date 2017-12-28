@@ -96,5 +96,5 @@
 	</section>
 <%@ include file="../common/footer.jsp" %>
 </body>
-<script src="../../js/burgerking_result.js"></script>
+<script src="../../js/burgerking/burgerking_result.js"></script>
 </html>

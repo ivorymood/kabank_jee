@@ -38,5 +38,6 @@ function joinConfirm(e){
 	alert('가입 확인 클릭' + joinId + joinRepass);
 	sessionStorage.setItem('id',joinId);
 	sessionStorage.setItem('pass', joinRepass);
+	document.querySelector('#join_form').submit;
 }
 window.addEventListener("load", init, false);

@@ -10,8 +10,8 @@ function init(){
 }
 function createTable(e){
 	alert('알로!');
-	location.href="member.jsp";
+	location.href="member_list.jsp";
 }
 function memberMgmt(){
-	location.href="member.jsp";
+	location.href="member_list.jsp";
 }

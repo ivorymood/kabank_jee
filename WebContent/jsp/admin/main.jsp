@@ -1,13 +1,20 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!doctype html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8" />
-	<title>admin</title>
-	<link rel="stylesheet" href="../../css/common.css" />
-	<link rel="stylesheet" href="../../css/admin.css" />
-</head>
+<%@ include file="../common/head.jsp" %>
+<link rel="stylesheet" href="../../css/admin.css" />
 <body>
+	<div class="grid-container">
+		<div class="grid-item"></div>
+		<div class="grid-item"></div>
+		<div class="grid-item"></div>
+		<div class="grid-item"></div>
+		<div class="grid-item"></div>
+		<div class="grid-item"></div>
+		<div class="grid-item"></div>
+		<div class="grid-item"></div>
+		<div class="grid-item"></div>
+	</div>
 	<section id="wrapper">
 		<article id="admin_header">
 			<h1>관리자 메인 페이지</h1>
@@ -34,6 +41,6 @@
 	</section>
 <%@ include file="../common/footer.jsp" %>
 </body>
-	<script src="../../js/admin.js"></script>
+	<script src="../../js/admin/admin.js"></script>
 
 </html>

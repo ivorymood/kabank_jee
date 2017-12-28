@@ -12,5 +12,5 @@
 	</section>		
 <%@ include file="../common/footer.jsp" %>
 </body>
-<script src="../../js/kakao.js"></script>
+<script src="../../js/kakao/kakao.js"></script>
 </html>

@@ -2,12 +2,8 @@
 <%@ page import="com.kabank.jee.domain.MemberBean" %>
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="utf-8">
-	<title>JOIN</title>
-	<link rel="stylesheet" href="../../css/common.css" />
-	<link rel="stylesheet" href="../../css/join.css" />
-</head>
+<%@ include file="../common/head.jsp" %>
+<link rel="stylesheet" href="../../css/join.css" />
 <body>
 <%@ include file="../common/header.jsp" %>
 <%@ include file="../common/nav.jsp" %>
@@ -21,7 +17,7 @@
 				</hgroup>
 			</header>
 		</article>
-		<form id="join_form" action="../index.jsp" >
+		<form id="join_form" action="join.jsp">
 			<article id="join_prg">
 				<table id="join_table">
 					<tr>
@@ -52,8 +48,7 @@
 						<td>이메일</td>
 						<td>
 							<input id="join_first_email" name="join_first_email" type="email"  /> @
-							<input id="join_second_email" name="join_second_email" type="email"  />
-							<select name="email" id="email" >
+							<select name="join_email_select" id="email" >
 								<option value="">직접입력</option>
 								<option value="gmail.com">gamil.com</option>
 								<option value="naver.com">naver.com</option>
@@ -99,7 +94,7 @@
 							<button>주소 검색</button> <br/>
 							<input id="join_second_addr" name="join_second_addr" type="text"/> 
 							<input id="join_third_addr" name="join_third_addr" type="text" /> 
-							<input id="join_forth_addr" name="join_forth_addr" type="text"/><br/>
+							<input id="join_fourth_addr" name="join_forth_addr" type="text"/><br/>
 						</td>
 					</tr>
 					<tr>
@@ -130,5 +125,5 @@
 </div>
 <%@ include file="../common/footer.jsp" %>
 </body>
-<script src="../../js/join.js"></script>
+<script src="../../js/user/join_form.js"></script>
 </html>

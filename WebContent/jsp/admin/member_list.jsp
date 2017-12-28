@@ -9,7 +9,7 @@
 	try{
 		Class.forName("oracle.jdbc.driver.OracleDriver");
 		conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe",
-					"bitcamp", "bitcamp");
+				"bitcamp", "bitcamp");
 		stmt = conn.createStatement();
 		sql = "SELECT * FROM tab";
 		rs = stmt.executeQuery(sql);
@@ -51,12 +51,8 @@
 %>
 <!doctype html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8" />
-	<title>admin</title>
-	<link rel="stylesheet" href="../../css/common.css" />
-	<link rel="stylesheet" href="../../css/member.css" />
-</head>
+<%@ include file="../common/head.jsp" %>
+<link rel="stylesheet" href="../../css/member_list.css" />
 <body>
 	<section id="wrapper">
 		<article id="admin_header">
@@ -106,11 +102,11 @@
 					<td>서울</td>
 				</tr>
 			</table> 
-			<button id="add_member_btn">추가</button>
+			<button id="member_register_form_btn">추가</button>
 		</article>
 	</section>
 <%@ include file="../common/footer.jsp" %>
 </body>
-	<script src="../../js/member.js"></script>
+	<script src="../../js/admin/member_list.js"></script>
 
 </html>

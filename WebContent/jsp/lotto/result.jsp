@@ -67,5 +67,5 @@
 	</section>
 <%@ include file="../common/footer.jsp" %>
 </body>
-<script src="../../js/lotto_result.js"></script>
+<script src="../../js/lotto/lotto_result.js"></script>
 </html>

@@ -8,7 +8,7 @@
 #member_table tr th{background-color: #008CBA; color: white;}
 td:nth-child(1){width: 100px; height: 50px; text-align: left;}
 td:nth-child(2){width: 300px; height: 50px;}
-tr:hover{font: bold 15px verdana, sans-serif; color: black;}
+tr:hover{font: bold 16px verdana, sans-serif; color: #008CBA;}
 #member_table, tr, td{border-bottom: 2px solid darkgray;}
 
-#add_member_btn{width: 50px; height: 30px; }
+#member_register_btn{width: 50px; height: 30px; }
