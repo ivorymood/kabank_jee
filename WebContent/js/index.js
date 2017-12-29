@@ -25,6 +25,6 @@ function goAdmin(){
      }
 }
 function goJoin(){
-	location.href = "user/join.jsp";
+	location.href = "user/join_form.jsp";
 }
 window.addEventListener("load", init, false);

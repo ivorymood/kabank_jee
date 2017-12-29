@@ -1,11 +1,14 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ page import="java.sql.*" %>
 <%@ page import="java.util.*" %>
+<%@ page import="com.kabank.jee.domain.MemberBean" %>
+
 <%
 	Connection conn = null;
 	Statement stmt = null;
 	ResultSet rs = null;
 	String sql = "";
+	List<MemberBean> result = new ArrayList<>();
 	try{
 		Class.forName("oracle.jdbc.driver.OracleDriver");
 		conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe",
@@ -20,7 +23,7 @@
 		}
 		boolean exist = false;
 		for(String s : list){
-			if(!s.equalsIgnoreCase("member")){
+			if(s.equalsIgnoreCase("member")){
 				exist = true;
 				break;
 			}
@@ -38,6 +41,20 @@
 			+"addr VARCHAR2(20)"
 			+")";
 			stmt.executeUpdate(sql);
+		}else{
+			rs = stmt.executeQuery("SELECT id, pass, name, ssn, phone, email, profile, addr FROM Member");
+			while(rs.next()){
+				MemberBean m = new MemberBean();
+				m.setId(rs.getString("id"));
+				m.setPass(rs.getString("pass"));
+				m.setName(rs.getString("name"));
+				m.setSsn(rs.getString("ssn"));
+				m.setPhone(rs.getString("phone"));
+				m.setEmail(rs.getString("profile"));
+				m.setProfile(rs.getString("profile"));
+				m.setAddr(rs.getString("addr"));
+				result.add(m);
+			}
 		}
 	}catch(Exception e){
 		e.printStackTrace();
@@ -81,26 +98,24 @@
 					<th>이 메 일</th>
 					<th>주    소</th>
 				</tr>
-				<tr>
-					<td>2</td>
-					<td>kim</td>
-					<td>김길자</td>
-					<td>1980-01-01</td>
-					<td>여성</td>
-					<td>010-1111-2222</td>
-					<td>asdf@test.com</td>
-					<td>서울</td>
-				</tr>
-				<tr>
-					<td>1</td>
-					<td>hong</td>
-					<td>홍길동</td>
-					<td>1980-01-01</td>
-					<td>남성</td>
-					<td>010-1111-2222</td>
-					<td>asdf@test.com</td>
-					<td>서울</td>
-				</tr>
+				<%
+				for(int i=result.size()-1; i>=0; i--){
+				%>
+					<tr>
+						<td><%= i+1 %></td>
+						<td><%= result.get(i).getId() %></td>
+						<td><%= result.get(i).getName() %></td>
+						<td><%= result.get(i).getSsn() %></td>
+						<td><%= result.get(i).getSsn() %></td>
+						<td><%= result.get(i).getPhone() %></td>
+						<td><%= result.get(i).getEmail() %></td>
+						<td><%= result.get(i).getAddr() %></td>
+					</tr>
+				<%	
+				}
+				%>
+							
+				
 			</table> 
 			<button id="member_register_form_btn">추가</button>
 		</article>

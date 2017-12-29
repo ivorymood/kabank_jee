@@ -65,7 +65,6 @@
 							<input id="check-kt" name="check-kt" type="checkbox" value="kt" />KT
 							<input id="check-lg" name="check-lg" type="checkbox" value="lg" />LG <br/>
 							<select id="join_first_num" name="join_first_num">
-								<option value="">선택</option>
 								<option value="010">010</option>
 								<option value="011">011</option>
 								<option value="02">02</option>

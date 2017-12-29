@@ -17,7 +17,11 @@ function init(){
 	document.querySelector('#footer_bit').addEventListener('click',
 			function(e){location.href = "http://bitcamp.co.kr/index.php?main_page=home";
 		},false);
+	document.querySelector('#attend_result').addEventListener('click', goResult, false);
 }
-
+function goResult(){
+	alert("짠");
+	document.querySelector('#bit_form').submit;
+}
 window.addEventListener("load", init, false);
 

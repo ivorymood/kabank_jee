@@ -3,19 +3,74 @@
 <html lang="en">
 <%@ include file="../common/head.jsp" %>
 <body>
-	
 <%@ include file="../common/header.jsp" %>
 <%@ include file="../common/nav.jsp" %>
-								<!--  ../ <-- 한칸 올라가는 것. 상대경로  -->
-	<section id= "wrapper">	
-		<article>
-			<h1>비트캠프 메인</h1>
-		</article>
-	</section>
-	<aside>
+<section id= "wrapper">	
+<article>
+	<h1>비트캠프 메인</h1>
+		<form id="bit_form" action="result.jsp">
+		<table id="bit_table">
+			<tr>
+				<th>상태</th>
+				<th>월</th>
+				<th>화</th>
+				<th>수</th>
+				<th>목</th>
+				<th>금</th>
+			</tr>
+			<tr>
+				<td>결석</td>
+				<td><input type="radio" name="monday" value="absent" checked/></td>
+				<td><input type="radio" name="tuesday" value="absent" checked/></td>
+				<td><input type="radio" name="wednesday" value="absent" checked/></td>
+				<td><input type="radio" name="thursday" value="absent" checked/></td>
+				<td><input type="radio" name="friday" value="absent" checked/></td>
+			</tr>
+			<tr>
+				<td>지각</td>
+				<td><input type="radio" name="monday" value="late" /></td>
+				<td><input type="radio" name="tuesday" value="late"/></td>
+				<td><input type="radio" name="wednesday" value="late"/></td>
+				<td><input type="radio" name="thursday" value="late"/></td>
+				<td><input type="radio" name="friday" value="late"/></td>
+			</tr>
+			<tr>
+				<td>조퇴</td>
+				<td><input type="radio" name="monday" value="early" /></td>
+				<td><input type="radio" name="tuesday" value="early"/></td>
+				<td><input type="radio" name="wednesday" value="early"/></td>
+				<td><input type="radio" name="thursday" value="early"/></td>
+				<td><input type="radio" name="friday" value="early"/></td>
+			</tr>
+			<tr>
+				<td>출석</td>
+				<td><input type="radio" name="monday" value="attend" /></td>
+				<td><input type="radio" name="tuesday" value="attend"/></td>
+				<td><input type="radio" name="wednesday" value="attend"/></td>
+				<td><input type="radio" name="thursday" value="attend"/></td>
+				<td><input type="radio" name="friday" value="attend"/></td>
+			</tr>
+			<tr>
+				<td>결과</td>
+				<td><input type="text" name="result"/></td>
+				<td><input type="text" name="result"/></td>
+				<td><input type="text" name="result"/></td>
+				<td><input type="text" name="result"/></td>
+				<td><input type="text" name="result"/></td>
+			</tr>
+			<tr>
+				<td colspan=6>
+					<input type="hidden" name="id" value="b"/>
+					<button id="attend_result">확인</button>
+				</td>
+			</tr>
+		</table>
+		</form>
 	
-	</aside>	
+</article>
+</section>
+	
 <%@ include file="../common/footer.jsp" %>
 </body>
-<script src="../../js/bitcamp/bitcamp.js"></script>
+<script src="../../js/bitcamp/main.js"></script>
 </html>

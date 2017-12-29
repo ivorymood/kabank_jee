@@ -1,5 +1,4 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@ page import="com.kabank.jee.domain.MemberBean" %>
 <%@ page import="java.sql.*" %>
 <jsp:useBean id="member" class="com.kabank.jee.domain.MemberBean" scope ="request"></jsp:useBean>
 <% 
@@ -21,12 +20,13 @@ try{
 			"bitcamp", "bitcamp");
 	stmt = conn.createStatement();
 	sql = String.format("INSERT INTO Member("
-				+"id  ,"
+				+"id ,"
 				+"pass ,"
 				+"name ,"
 				+"ssn ,"
 				+"phone ,"
 				+"email ,"
+				+"profile ,"
 				+"addr "
 				+")VALUES('%s','%s','%s','%s','%s','%s','%s','%s')",
 				member.getId(),
